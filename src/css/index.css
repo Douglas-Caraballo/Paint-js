@@ -1,0 +1,43 @@
+#areaForPaint{
+    border: 1px solid darkblue;
+    height: 450px;
+    width: 500px;
+    position: relative;
+    left: 50%;
+}
+#tmpCanvas{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: crosshair;
+}
+.black {
+    background-color: #000000;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.blue {
+    background-color: #0000FF;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.yellow {
+    background-color: #FFFF00;
+}
+
+.red {
+    background-color: #FF0000;
+}
+.black, .white, .blue, .green, .yellow, .red {
+
+    width: 20px;
+    height: 20px;
+}
