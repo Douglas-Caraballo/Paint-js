@@ -307,7 +307,7 @@
             imgCopyRandMain = ctx.getImageData(0,0,tmpCanvas.width, tmpCanvas.height);
             whatPaste = 2;
             tmpCtx.strokeStyle = lastColor;
-            tmpCtx.lineWidth = lineWidth;
+            tmpCtx.lineWidth = lastWidth;
             tmpCtx.globalAlpha = lastAlpha;
         }else if(tool == "no"){
             xForCopy = StartMouse.x;
@@ -471,7 +471,7 @@
         tmpCtx.beginPath();
         tmpCtx.arc(x,y,radius,0, Math.PI*2, false);
         tmpCtx.stroke();
-        tmpCtx,closePath();
+        tmpCtx.closePath();
     };
 
     //Dibujar una linea recta
@@ -690,7 +690,7 @@
         if(ppts.length < 3){
             var m = ppts[0];
             tmpCtx.beginPath();
-            tmpCtx.arc(m.x, m.y, tmp.lineWidth/2, 0, Math.PI*2, !0);
+            tmpCtx.arc(m.x, m.y, tmpCtx.lineWidth/2, 0, Math.PI*2, !0);
             tmpCtx.fill();
             tmpCtx.closePath();
 
