@@ -478,7 +478,7 @@
     var onPaintLine = function(){
 
         //Despeje la linea de tiempo antes de dibujar
-        //tmpCtx.clearRect(0,0,tmpCanvas.width, tmpCanvas.height);
+        tmpCtx.clearRect(0,0,tmpCanvas.width, tmpCanvas.height);
 
         tmpCtx.beginPath();
         tmpCtx.moveTo(StartMouse.x, StartMouse.y);
